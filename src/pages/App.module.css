@@ -1,0 +1,198 @@
+:root {
+    --Blue100: hsl(225, 100%, 94%);
+    --Blue700: hsl(245, 75%, 52%);
+    --Blue50: hsl(225, 100%, 98%);
+    --Gray600: hsl(224, 23%, 55%);
+    --Blue950: hsl(223, 47%, 23%);
+}
+@font-face {
+    font-family: "Red Hat Display";
+    src: url("../assets/RedHatDisplay-VariableFont_wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: url("../../public/pattern-background-desktop.svg") center 0 no-repeat,
+    var(--Blue100);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Red Hat Display", serif;
+}
+.container{
+    background-color: white;
+    max-width: 450px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containerWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    box-sizing: border-box;
+
+}
+.header{
+    margin-top: 25px;
+    font-weight: 900;
+    font-size: 1.77rem;
+    color: var(--Blue950);
+    margin-bottom: 15px;
+}
+.description{
+    text-align: center;
+    margin-top: 0;
+    color: var(--Gray600);
+    font-weight: 600;
+    line-height: 150%;
+    font-size: 17px;
+}
+.price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    box-sizing: border-box;
+}
+.tarif{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.priceWrap{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+    background-color: var(--Blue50);
+    height: 100px;
+    padding: 20px;
+    margin: 5px 10px 30px 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.img {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.img img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.plan{
+    color: var(--Blue950);
+    font-weight: 900;
+}
+.tarif_price{
+    color: var(--Gray600);
+    font-weight: 600;
+}
+.link{
+    font-size: .87rem;
+    font-weight: 800;
+    color: var(--Blue700);
+    transition: opacity, text-decoration 0.3s ease-in-out;
+}
+.link:hover{
+    opacity: 0.7;
+    text-decoration: none;
+}
+.payment{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Blue700);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 5px;
+    box-shadow: 0 10px 30px rgba(10, 10, 120, 0.3);
+    z-index: 1;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+.payment:hover{
+    opacity: 0.7;
+}
+.cancel{
+    margin: 15px 0 30px 0;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: 700;
+    font-size: 15px;
+    padding-bottom: 5px;
+    color: var(--Gray600);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.cancel:hover{
+    color: var(--Blue950);
+}
+@media screen and (max-width: 600px) {
+    body {
+        padding: 20px 10px;
+        background: url("./../../public/pattern-background-mobile.svg") center top no-repeat, var(--Blue100);
+        background-size: cover;
+    }
+    .container {
+        width: 90vw;
+        margin: 10px;
+        border-radius: 16px;
+    }
+    .containerWrap{
+        width: 85%;
+    }
+    .img{
+        width: 100%;
+    }
+    .header {
+        margin-top: 35px;
+        font-size: 1.5rem;
+    }
+    .description {
+        font-size: 16px;
+        line-height: 170%;
+    }
+    .priceWrap{
+        font-size: 14px;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+    .payment,
+    .cancel {
+        height: 45px;
+        font-size: 14px;
+    }
+    .cancel{
+        margin-bottom: 20px;
+    }
+}
