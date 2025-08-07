@@ -16,6 +16,7 @@ body{
     padding: 0;
     background: url("../../public/pattern-background-desktop.svg") center 0 no-repeat,
     var(--Blue100);
+    background-size: contain;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -176,11 +177,12 @@ body{
     }
     .header {
         margin-top: 35px;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .description {
-        font-size: 16px;
+        font-size: 15px;
         line-height: 170%;
+        margin: 0 15px 15px 15px;
     }
     .priceWrap{
         font-size: 14px;
@@ -191,8 +193,20 @@ body{
     .cancel {
         height: 45px;
         font-size: 14px;
+        transition: color 0.1s ease;
+    }
+    .payment:active{
+        opacity: 0.7;
     }
     .cancel{
         margin-bottom: 20px;
     }
+    .cancel:active{
+        color: black;
+    }
+    .link:active{
+        opacity: 0.7;
+        text-decoration: none;
+    }
+;
 }
