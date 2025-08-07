@@ -6,7 +6,11 @@ function App() {
   return (
     <section className={styles.container}>
         <div className={styles.img}>
-            <img src='/illustration-hero.svg' alt={'illustration'} />
+            <img
+                //src='/OrderSummaryComponent/illustration-hero.svg'
+                src='/illustration-hero.svg'
+                alt={'illustration'}
+            />
         </div>
         <div className={styles.containerWrap}>
             <h2 className={styles.header}>Order Summary</h2>
