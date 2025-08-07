@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Vercel](https://order-summary-component-ten-mu.vercel.app/)
-- Live Site URL: [mmalabugin.ru/NFTPreviewCardComponent](https://mmalabugin.ru/OrderSummaryComponent/)
+- Live Site URL: [mmalabugin.ru/OrderSummaryComponent](https://mmalabugin.ru/OrderSummaryComponent/)
 
 ## My process
 
