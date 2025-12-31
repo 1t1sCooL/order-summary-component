@@ -5,8 +5,8 @@ function App() {
     <section className={styles.container}>
       <div className={styles.img}>
         <img
-          src="/OrderSummaryComponent/illustration-hero.svg"
-          // src='/illustration-hero.svg'
+          //   src="/OrderSummaryComponent/illustration-hero.svg"
+          src="/illustration-hero.svg"
           alt={"illustration"}
         />
       </div>
